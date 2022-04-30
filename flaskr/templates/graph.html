@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Safe hotel booking system
+{% endblock %}
+
+{% block switchPage %}
+  <a href="{{ url_for('create_app') }}"> <button> HomePage </button> </a>
+{% endblock %}
+
+{% block backgroundImage %}
+  <img
+    src="https://s2.loli.net/2022/04/23/fSdE3KHmjetgDAi.png"
+    alt="backgroundImg"
+    class="backgroundImgGraph"
+  />
+{% endblock %}
+
+{% block welcome %}
+  <h1>This is the Homepage of graphs presentation</h1>
+{% endblock %}
+
+{% block leftContent %}
+  <div class="crime_graph">
+    <h4>Location — Community Areas</h4>
+    <p>The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal.
+      This location is shifted from the actual location for partial redaction but falls on the same block.</p>
+    <img src="https://s2.loli.net/2022/04/29/2uXENahdxLyotjV.png" width="700px">
+  </div>
+  <div class="crime_graph">
+    <h4> Location </h4>
+    <p>The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal.
+      This location is shifted from the actual location for partial redaction but falls on the same block.</p>
+    <img src="https://s2.loli.net/2022/04/29/DEalmfJhMWQwgFv.png" width="700px">
+  </div>
+  <div class="draw_image">
+    <img src="data:image/png;base64, {{ url1 }}">
+  </div>
+  <div class="draw_image">
+    <img src="data:image/png;base64, {{ url3 }}">
+  </div>
+{% endblock %}
+
+{% block rightContent %}
+  <div class="crime_graph">
+    <h4>Location — Police Districts</h4>
+    <p>The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal.
+      This location is shifted from the actual location for partial redaction but falls on the same block.</p>
+    <img src="https://s2.loli.net/2022/04/29/UHuRLnJOoYmKdZ6.png" width="700px">
+  </div>
+  <div class="crime_graph">
+    <h4>Location — Boundaries - ZIP Codes</h4>
+    <p>The location where the incident occurred in a format that allows for creation of maps and other geographic operations on this data portal.
+      This location is shifted from the actual location for partial redaction but falls on the same block.</p>
+    <img src="https://s2.loli.net/2022/04/29/LrilckVM3g5o2Xm.png" width="700px">
+  </div>
+  <div class="draw_image">
+    <img src="data:image/png;base64, {{ url2 }}">
+  </div>
+  <div class="draw_image">
+    <img src="data:image/png;base64, {{ url4 }}">
+  </div>
+{% endblock %}
+
+{% block bottomContent %}
+  <p style="font-size: 14px"><b> SI 507 Final Project : presentation page</b></p>
+  <p> Siyu Chen </p>
+{% endblock %}

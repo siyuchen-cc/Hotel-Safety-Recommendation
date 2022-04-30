@@ -1,0 +1,335 @@
+html {
+    font-family: sans-serif;
+    background: #eee;
+}
+
+.welcome {
+    margin-left: -1%;
+    width: 101.5%;
+    padding-bottom: 200px;
+    background-color: #DBF6F8;
+    background-image: linear-gradient(to bottom right, #E4F5F7, #b5ecf3);
+    line-height: 30px;
+    font-family: "Gill Sans";
+}
+
+.welcome .welcomeContent {
+    margin: 0 25.5% 0 25.5%;
+    text-align: center;
+}
+
+.welcome .appTitle {
+    font-weight: bold;
+    font-size: xx-large;
+    color: black;
+}
+
+.welcome .appSubTitle {
+    font-weight: bold;
+    font-size: x-large;
+    color: dodgerblue;
+    line-height: 20px;
+}
+
+.welcome .appDescription {
+    color: #9ba4b0;
+    line-height: 15px;
+    font-size: medium;
+}
+
+.welcome .backgroundImg {
+    position: absolute;
+    top: 80px;
+    right: 5%;
+    width: 21%;
+    height: 30%;
+    animation: move 3s infinite;
+    animation-direction: alternate;
+}
+.welcome .backgroundImgGraph {
+    position: absolute;
+    top: 80px;
+    right: 5%;
+    width: 25%;
+    height: 40%;
+    animation: move 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+  0%
+  {
+    transform: translateY(0px);
+  }
+  100%
+  {
+    transform: translateY(20px);
+  }
+}
+
+nav {
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    width: 80%;
+}
+
+nav .switchButton {
+    margin-left: 60%;
+}
+
+button {
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #2669ef;
+    font-size: 14px;
+    color: #eeeeee;
+    padding: 12px;
+}
+button:hover {
+    background-color: #8eb0f1;
+    transition-duration: 0.4s;
+}
+
+.home {
+    width: 98%;
+    top: -170px;
+    margin:0 auto;
+    margin-top: -10%;
+    margin-bottom: 1%;
+    border-radius: 1rem;
+    text-align: center;
+    color: black;
+    box-shadow: 0 5px 5px 0 rgba(160, 158, 158, 0.24), 0 10px 10px 0 rgba(182, 181, 181, 0.19);
+    background: rgba(255, 255, 255, .7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.searchBar {
+    padding-top: 3%;
+    width: 70%;
+    margin-left: 15%;
+}
+.searchBar input {
+    padding-left: 3%;
+    font-size: 18px;
+    width: 65%;
+    height: 55px;
+    border-radius: 1rem;
+    border: none;
+}
+
+.content {
+    display: table;
+    width: 100%;
+}
+
+.left {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 50%;
+}
+
+.left h3 {
+    font-family: "Gill Sans";
+}
+
+.left img {
+    border-radius: 1rem;
+}
+
+.left .images {
+    display: table;
+    vertical-align: middle;
+    margin: 0 15% 0 15%;
+    width: 70%;
+}
+
+.left .images div {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.left .hotel_details .info {
+    margin: 3% 0 2% 0;
+}
+
+.left .sub_info {
+    margin: 3% 0 8% 0;
+}
+
+.left .hotel_details label {
+    font-family: "Gill Sans";
+    font-weight: bold;
+    font-size: 18px;
+    color: dodgerblue;
+    line-height: 20px;
+}
+
+.left .hotel_details span {
+    line-height: 10px;
+    font-size: 16px;
+}
+
+.left .filter .filterItem {
+    margin: 1% 0 3% 0;
+}
+
+.left p {
+    color: #9ba4b0;
+    line-height: 15px;
+    font-size: 15px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.left .crime_graph p {
+    line-height: 18px;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto 2% auto;
+}
+
+.left .filter label {
+    font-family: "Gill Sans";
+    font-weight: bold;
+    font-size: 20px;
+    color: dodgerblue;
+    line-height: 20px;
+}
+
+.left .filter input {
+    padding: 1%;
+    font-size: 16px;
+    width: 30%;
+    height: 45px;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+}
+
+.left .filter select {
+    padding: 1%;
+    font-size: 16px;
+    width: 30%;
+    height: 60px;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+}
+
+.left .submit {
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #2669ef;
+    font-size: 14px;
+    color: #eeeeee;
+    padding: 12px;
+}
+
+.left .submit:hover {
+    background-color: #8eb0f1;
+    transition-duration: 0.4s;
+}
+
+.right {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.right .crime_graph p {
+    color: #9ba4b0;
+    line-height: 18px;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto 2% auto;
+}
+
+.right img {
+    border-radius: 1rem;
+}
+
+.right .hotels {
+    box-shadow: 0 5px 5px 0 rgba(160, 158, 158, 0.24), 0 10px 10px 0 rgba(182, 181, 181, 0.19);
+    border-radius: 1rem;
+    padding: 10px;
+    width: 70%;
+    margin: 3% 2% 0 12.5%;
+}
+
+.right .body {
+    margin-top: 1%;
+    display: table;
+    width: 100%;
+}
+
+.right .body .img {
+    display: table-cell;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.right .body .content {
+    display: table-cell;
+    width: 60%;
+    vertical-align: middle;
+}
+
+.right .body .localize {
+    display: table-cell;
+    width: 10%;
+    vertical-align: middle;
+}
+
+.right .label {
+    margin: 3% 0 3% 0;
+}
+
+.right .crime_status {
+    display: table;
+    width: 100%;
+}
+
+.right .crime_status .icon {
+    display: table-cell;
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 5%;
+}
+
+.right .crime_status .rate {
+    display: table-cell;
+    width: 70%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: "Gill Sans";
+    font-weight: bold;
+    font-size: 20px;
+    color: dodgerblue;
+    line-height: 20px;
+}
+
+.map {
+    margin: 1% 0 3% 0;
+    width:700px;
+    height:700px;
+    border-radius: 1rem;
+}
+
+.bottom {
+    margin: 2% 0 2% 0;
+    font-size: 12px;
+    text-align: center;
+    line-height: 10px;
+}
+
+.draw_image {
+    margin: 3% 0 2% 0;
+}

@@ -1,0 +1,444 @@
+{
+    "Nodes": [
+        {
+            "key": 1,
+            "left": null,
+            "right": 2,
+            "val": {
+                "name": "Central",
+                "address": "1718 S State St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60616,
+                "website": "http://home.chicagopolice.org/community/districts/1st-district-central/",
+                "phone": "312-745-4290",
+                "fax": "312-745-3694",
+                "tty": "312-745-3693",
+                "x": 1176569.052,
+                "y": 1891771.704,
+                "latitude": 41.85837259,
+                "longitude": -87.62735617
+            }
+        },
+        {
+            "key": 2,
+            "left": null,
+            "right": 3,
+            "val": {
+                "name": "Wentworth",
+                "address": "5101 S Wentworth Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60609,
+                "website": "http://home.chicagopolice.org/community/districts/2nd-district-wentworth/",
+                "phone": "312-747-8366",
+                "fax": "312-747-5396",
+                "tty": "312-747-6656",
+                "x": 1175864.837,
+                "y": 1871153.753,
+                "latitude": 41.80181109,
+                "longitude": -87.63056018
+            }
+        },
+        {
+            "key": 3,
+            "left": null,
+            "right": 4,
+            "val": {
+                "name": "Grand Crossing",
+                "address": "7040 S Cottage Grove Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60637,
+                "website": "http://home.chicagopolice.org/community/districts/3rd-district-grand-crossing/",
+                "phone": "312-747-8201",
+                "fax": "312-747-5479",
+                "tty": "312-747-9168",
+                "x": 1182739.183,
+                "y": 1858317.732,
+                "latitude": 41.76643089,
+                "longitude": -87.60574786
+            }
+        },
+        {
+            "key": 4,
+            "left": null,
+            "right": 5,
+            "val": {
+                "name": "South Chicago",
+                "address": "2255 E 103rd St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60617,
+                "website": "http://home.chicagopolice.org/community/districts/4th-district-south-chicago/",
+                "phone": "312-747-7581",
+                "fax": "312-747-5276",
+                "tty": "312-747-9169",
+                "x": 1193131.299,
+                "y": 1837090.265,
+                "latitude": 41.70793329,
+                "longitude": -87.56834912
+            }
+        },
+        {
+            "key": 5,
+            "left": null,
+            "right": 6,
+            "val": {
+                "name": "Calumet",
+                "address": "727 E 111th St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60628,
+                "website": "http://home.chicagopolice.org/community/districts/5th-district-calumet/",
+                "phone": "312-747-8210",
+                "fax": "312-747-5935",
+                "tty": "312-747-9170",
+                "x": 1183305.427,
+                "y": 1831462.313,
+                "latitude": 41.69272336,
+                "longitude": -87.60450587
+            }
+        },
+        {
+            "key": 6,
+            "left": null,
+            "right": 7,
+            "val": {
+                "name": "Gresham",
+                "address": "7808 S Halsted St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60620,
+                "website": "http://home.chicagopolice.org/community/districts/6th-district-gresham/",
+                "phone": "312-745-3617",
+                "fax": "312-745-3649",
+                "tty": "312-745-3639",
+                "x": 1172283.013,
+                "y": 1853022.646,
+                "latitude": 41.75213684,
+                "longitude": -87.64422891
+            }
+        },
+        {
+            "key": 7,
+            "left": null,
+            "right": 8,
+            "val": {
+                "name": "Englewood",
+                "address": "1438 W 63rd St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60636,
+                "website": "http://home.chicagopolice.org/community/districts/7th-district-englewood/",
+                "phone": "312-747-8223",
+                "fax": "312-747-6558",
+                "tty": "312-747-6652",
+                "x": 1167659.235,
+                "y": 1863005.522,
+                "latitude": 41.77963154,
+                "longitude": -87.66088702
+            }
+        },
+        {
+            "key": 8,
+            "left": null,
+            "right": 9,
+            "val": {
+                "name": "Chicago Lawn",
+                "address": "3420 W 63rd St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60629,
+                "website": "http://home.chicagopolice.org/community/districts/8th-district-chicago-lawn/",
+                "phone": "312-747-8730",
+                "fax": "312-747-8545",
+                "tty": "312-747-8116",
+                "x": 1154575.242,
+                "y": 1862672.049,
+                "latitude": 41.77898719,
+                "longitude": -87.70886382
+            }
+        },
+        {
+            "key": 9,
+            "left": null,
+            "right": 10,
+            "val": {
+                "name": "Deering",
+                "address": "3120 S Halsted St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60608,
+                "website": "http://home.chicagopolice.org/community/districts/9th-district-deering/",
+                "phone": "312-747-8227",
+                "fax": "312-747-5329",
+                "tty": "312-747-9172",
+                "x": 1171440.24,
+                "y": 1884085.224,
+                "latitude": 41.83739443,
+                "longitude": -87.64640771
+            }
+        },
+        {
+            "key": 10,
+            "left": null,
+            "right": 11,
+            "val": {
+                "name": "Ogden",
+                "address": "3315 W Ogden Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60623,
+                "website": "http://home.chicagopolice.org/community/districts/10th-district-ogden/",
+                "phone": "312-747-7511",
+                "fax": "312-747-7429",
+                "tty": "312-747-7471",
+                "x": 1154500.753,
+                "y": 1890985.501,
+                "latitude": 41.85668453,
+                "longitude": -87.70838196
+            }
+        },
+        {
+            "key": 11,
+            "left": null,
+            "right": 12,
+            "val": {
+                "name": "Harrison",
+                "address": "3151 W Harrison St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60612,
+                "website": "http://home.chicagopolice.org/community/districts/11th-district-harrison/",
+                "phone": "312-746-8386",
+                "fax": "312-746-4281",
+                "tty": "312-746-5151",
+                "x": 1155244.069,
+                "y": 1897148.755,
+                "latitude": 41.87358229,
+                "longitude": -87.70548813
+            }
+        },
+        {
+            "key": 12,
+            "left": null,
+            "right": 14,
+            "val": {
+                "name": "Near West",
+                "address": "1412 S Blue Island Ave\n",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60608,
+                "website": "http://home.chicagopolice.org/community/districts/12th-district-near-west/",
+                "phone": "312-746-8396",
+                "fax": "312-746-4248",
+                "tty": "312-746-9868",
+                "x": 1168487.845,
+                "y": 1893384.455,
+                "latitude": 41.86297662,
+                "longitude": -87.65697251
+            }
+        },
+        {
+            "key": 14,
+            "left": null,
+            "right": 15,
+            "val": {
+                "name": "Shakespeare",
+                "address": "2150 N California Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60647,
+                "website": "http://home.chicagopolice.org/community/districts/14th-district-shakespeare/",
+                "phone": "312-744-8250",
+                "fax": "312-744-2422",
+                "tty": "312-744-8260",
+                "x": 1157304.426,
+                "y": 1914481.521,
+                "latitude": 41.92110332,
+                "longitude": -87.69745182
+            }
+        },
+        {
+            "key": 15,
+            "left": null,
+            "right": 16,
+            "val": {
+                "name": "Austin",
+                "address": "5701 W Madison St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60644,
+                "website": "http://home.chicagopolice.org/community/districts/15th-district-austin/",
+                "phone": "312-743-1440",
+                "fax": "312-743-1366",
+                "tty": "312-743-1485",
+                "x": 1138148.815,
+                "y": 1899399.078,
+                "latitude": 41.88008346,
+                "longitude": -87.76819989
+            }
+        },
+        {
+            "key": 16,
+            "left": null,
+            "right": 17,
+            "val": {
+                "name": "Jefferson Park",
+                "address": "5151 N Milwaukee Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60630,
+                "website": "http://home.chicagopolice.org/community/districts/16th-district-jefferson-park/",
+                "phone": "312-742-4480",
+                "fax": "312-742-4421",
+                "tty": "312-742-4423",
+                "x": 1138480.758,
+                "y": 1933660.473,
+                "latitude": 41.97409445,
+                "longitude": -87.76614884
+            }
+        },
+        {
+            "key": 17,
+            "left": null,
+            "right": null,
+            "val": {
+                "name": "Albany Park",
+                "address": "4650 N Pulaski Rd",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60630,
+                "website": "http://home.chicagopolice.org/community/districts/17th-district-albany-park/",
+                "phone": "312-742-4410",
+                "fax": "312-742-5411",
+                "tty": "312-742-5451",
+                "x": 1148843.91,
+                "y": 1930801.058,
+                "latitude": 41.96605342,
+                "longitude": -87.72811456
+            }
+        },
+        {
+            "key": 18,
+            "left": 1,
+            "right": 19,
+            "val": {
+                "name": "Near North",
+                "address": "1160 N Larrabee St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60610,
+                "website": "http://home.chicagopolice.org/community/districts/18th-district-near-north/",
+                "phone": "312-742-5870",
+                "fax": "312-742-5771",
+                "tty": "312-742-5773",
+                "x": 1172080.029,
+                "y": 1908086.527,
+                "latitude": 41.90324165,
+                "longitude": -87.64335214
+            }
+        },
+        {
+            "key": 19,
+            "left": null,
+            "right": 20,
+            "val": {
+                "name": "Town Hall",
+                "address": "850 W Addison St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60613,
+                "website": "http://home.chicagopolice.org/community/districts/19th-district-town-hall/",
+                "phone": "312-744-8320",
+                "fax": "312-744-4481",
+                "tty": "312-744-8011",
+                "x": 1169730.744,
+                "y": 1924160.317,
+                "latitude": 41.94740046,
+                "longitude": -87.65151202
+            }
+        },
+        {
+            "key": 20,
+            "left": null,
+            "right": 22,
+            "val": {
+                "name": "Lincoln",
+                "address": "5400 N Lincoln Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60625,
+                "website": "http://home.chicagopolice.org/community/districts/20th-district-lincoln/",
+                "phone": "312-742-8714",
+                "fax": "312-742-8803",
+                "tty": "312-742-8841",
+                "x": 1158399.146,
+                "y": 1935788.826,
+                "latitude": 41.97954951,
+                "longitude": -87.69284451
+            }
+        },
+        {
+            "key": 22,
+            "left": null,
+            "right": 24,
+            "val": {
+                "name": "Morgan Park",
+                "address": "1900 W Monterey Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60643,
+                "website": "http://home.chicagopolice.org/community/districts/22nd-district-morgan-park/",
+                "phone": "312-745-0710",
+                "fax": "312-745-0814",
+                "tty": "312-745-0569",
+                "x": 1165825.476,
+                "y": 1830851.333,
+                "latitude": 41.69143478,
+                "longitude": -87.66852039
+            }
+        },
+        {
+            "key": 24,
+            "left": null,
+            "right": 25,
+            "val": {
+                "name": "Rogers Park",
+                "address": "6464 N Clark St",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60626,
+                "website": "http://home.chicagopolice.org/community/districts/24th-district-rogers-park/",
+                "phone": "312-744-5907",
+                "fax": "312-744-6928",
+                "tty": "312-744-7603",
+                "x": 1164193.588,
+                "y": 1943199.401,
+                "latitude": 41.99976348,
+                "longitude": -87.67132429
+            }
+        },
+        {
+            "key": 25,
+            "left": null,
+            "right": null,
+            "val": {
+                "name": "Grand Central",
+                "address": "5555 W Grand Ave",
+                "city": "Chicago",
+                "state": "IL",
+                "zip": 60639,
+                "website": "http://home.chicagopolice.org/community/districts/25th-district-grand-central/",
+                "phone": "312-746-8605",
+                "fax": "312-746-4353",
+                "tty": "312-746-8383",
+                "x": 1138770.871,
+                "y": 1913442.439,
+                "latitude": 41.91860889,
+                "longitude": -87.76557448
+            }
+        }
+    ]
+}

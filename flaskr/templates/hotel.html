@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Safe hotel booking system
+{% endblock %}
+
+{% block switchPage %}
+  <a href="{{ url_for('graph.graph_page') }}">
+    <button> GraphPage </button>
+  </a>
+{% endblock %}
+
+{% block welcomeContent %}
+  <div class="appTitle"> Safe Hotel Booking </div>
+  <div class="appSubTitle"> <p>Booking your next hotel ...! </p></div>
+  <div class="appDescription">
+    <p><i>Concerns about hotel safety?</i><p>
+    <p><i>Based on the criminal rate, Safe Hotel Booking is here to help! </i></p>
+  </div>
+{% endblock %}
+
+{% block backgroundImage %}
+  <img
+    src="https://s2.loli.net/2022/04/23/ZDcISlG7v5dNyef.png"
+    alt="backgroundImg"
+    class="backgroundImg"
+  />
+{% endblock %}
+
+{% block leftContent %}
+  <h3><a href="{{ hotel.url }}"> {{ hotel.hotel_name_trans }} </a></h3>
+  <div class="images">
+    <div>
+      <img src="{{ hotel.max_1440_photo_url }}" width="250px">
+    </div>
+    <div>
+      <img src="https://s2.loli.net/2022/04/29/a2dc9V5Z8xyMeT7.png" width="250px" height="250px">
+    </div>
+  </div>
+
+  <div class="hotel_details">
+    <div class="info">
+      <label for="price">Prices :   </label>
+      <span id="price">$ {{ hotel.price_breakdown.all_inclusive_price }}</span>
+    </div>
+
+    <div class="info">
+      <label for="discount">After discount :   </label>
+      <span id="discount">$ {{ hotel.min_total_price }} </span>
+    </div>
+
+    <div class="info">
+      <label for="unit">Unit configuration :   </label>
+      <span id="unit">{{ hotel.unit_configuration_label }}</span>
+    </div>
+
+    <div class="info">
+      <label for="address">Address :   </label>
+      <span id="address">{{ hotel.address_trans }}, {{ hotel.city_name_en }}</span>
+
+    </div>
+
+    <div class="info">
+      <label for="lat">Lat :   </label>
+      <span id="lat">{{ hotel.latitude }}</span>
+      <br>
+      <label for="lng">Lng :   </label>
+      <span id="lng">{{ hotel.longitude }}</span>
+    </div>
+
+    <div class="info">
+      <label for="check">Check in info :   </label>
+      <span id="check">
+        {% if not hotel.checkin.from %}
+          from 0:00 to {{ hotel.checkout.until }}
+        {% elif not hotel.checkin.until %}
+          from {{ hotel.checkout.from }} to 24:00
+        {% else %}
+          from {{ hotel.checkin.from }} to {{ hotel.checkin.until }}
+        {% endif %}
+      </span>
+    </div>
+
+    <div class="info">
+      <label for="checkout">Check out info :   </label>
+      <span id="checkout">
+        {% if not hotel.checkout.from %}
+          from 0:00 to {{ hotel.checkout.until }}
+        {% elif not hotel.checkout.until %}
+          from {{ hotel.checkout.from }} to 24:00
+        {% else %}
+          from {{ hotel.checkout.from }} to {{ hotel.checkout.until }}
+        {% endif %}
+      </span>
+    </div>
+
+    <div class="info">
+      <label for="review">Review :   </label>
+      <span id="review"><b><i>{{ hotel.review_nr }}</i></b> reviews in total, score <b><i>{{ hotel.review_score }}</i></b>, overview: <b><i>{{ hotel.review_score_word }}</i></b></span>
+    </div>
+  </div>
+
+  <div class="sub_info">
+    {% if hotel.is_free_cancellable==1 %}
+      <p> This hotel is free to cancel within 24hr before the check in time </p>
+    {% else %}
+      <p> This hotel is not free cancellable</p>
+    {% endif %}
+
+    {% if hotel.children_not_allowed==1 %}
+      <p> children not allowed </p>
+    {% else %}
+      <p> children allowed</p>
+    {% endif %}
+
+    {% if hotel.is_beach_front==1 %}
+      <p> It contains sea view rooms!</p>
+    {% endif %}
+
+    {% if hotel.is_city_center==1 %}
+      <p> In city center, convenient to travel </p>
+    {% endif %}
+
+    <p>{{ hotel.ribbon_text }}</p>
+  </div>
+{% endblock %}
+
+{% block rightContent %}
+  <div class="map" id="map" onload="initMap()"></div>
+  <div class="crime_status">
+    {% if rate<=0.03 %}
+    <div class="icon">
+      <img src="https://s2.loli.net/2022/04/29/uGqJLminsPQwav7.png" width="60px">
+    </div>
+    {% elif rate>0.03 and rate<0.05 %}
+    <div class="icon">
+      <img src="https://s2.loli.net/2022/04/29/E48xuHMdnbWID3C.png" width="60px">
+    </div>
+    {% else %}
+    <div class="icon">
+      <img src="https://s2.loli.net/2022/04/29/XmQo4UvxVFkd8RL.png" width="60px">
+    </div>
+    {% endif %}
+
+    <div class="rate">
+      <label for="rate">Criminal Rate :   </label>
+      <span id="rate" >{{ rate * 100 }}% </span>
+    </div>
+  </div>
+
+  {% if hotel.latitude %}
+    <script type="text/javascript">
+      function changeCenter() {
+        initMap(parseFloat("{{ hotel.latitude}}"), parseFloat("{{ hotel.longitude }}") , 18)
+        console.log("successfully");
+      }
+    </script>
+
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAL6VXeipRtUW2F8ed5U33uvrwFarzbDDM&callback=changeCenter">
+            type="text/javascript"
+    </script>
+  {% endif %}
+
+  <script type="text/javascript">
+    function initMap(lat, lng, zoom) {
+        new google.maps.Map(document.getElementById('map'), {
+            center: { lat: lat ? lat : 41.881832, lng: lng ? lng : -87.623177 },
+            zoom: zoom ? zoom : 14,
+        });
+    }
+  </script>
+
+{% endblock %}

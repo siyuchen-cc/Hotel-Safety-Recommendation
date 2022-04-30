@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Safe hotel booking system
+{% endblock %}
+
+{% block switchPage %}
+  <a href="{{ url_for('graph.graph_page') }}">
+    <button> GraphPage </button>
+  </a>
+{% endblock %}
+
+{% block welcomeContent %}
+  <div class="appTitle"> Safe Hotel Booking </div>
+  <div class="appSubTitle"> <p>Booking your next hotel ...! </p></div>
+  <div class="appDescription">
+    <p><i>Concerns about hotel safety?</i><p>
+    <p><i>Based on the criminal rate, Safe Hotel Booking is here to help! </i></p>
+  </div>
+{% endblock %}
+
+{% block backgroundImage %}
+  <img
+    src="https://s2.loli.net/2022/04/23/ZDcISlG7v5dNyef.png"
+    alt="backgroundImg"
+    class="backgroundImg"
+  />
+{% endblock %}
+
+{% block leftContent %}
+  <form method="post">
+    <div class="filter">
+      <div class="filterItem">
+        <label for="city">City :   </label>
+        <input type="text" name="city" id="city" value="Chicago" disabled>
+        <br>
+        <p><i>Description: City for search, now only support Chicago</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="order">Order By :   </label>
+        <select name="order" id="order">
+          <option value="popularity">popularity</option>
+          <option value="price">price</option>
+          <option value="review_score">review_score</option>
+          <option value="distance">distance</option>
+        </select>
+        <br>
+        <p><i>Description: We support popularity, price, review_score and distance</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="currency">Currency :   </label>
+        <select name="currency" id="currency">
+          <option value="CNY">CNY</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="RUB">RUB</option>
+          <option value="USD">USD</option>
+        </select>
+        <br>
+        <p><i>Description: The currency we support for searcging contain CNY, EUR, GBP, INR, JPY, KRW, RUB and USD</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="adults_number">Adults Number :   </label>
+        <input type="text" name="adults_number" id="adults_number">
+        <br>
+        <p><i>Description: Number of adults, Minimum: 1, Maximum: 29</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="room_number">Room Number :   </label>
+        <input type="text" name="room_number" id="room_number">
+        <br>
+        <p><i>Description: Number of room, Minimum: 1, Maximum: 29</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="children_number">Children Number :   </label>
+        <input type="text" name="children_number" id="children_number">
+        <br>
+        <p><i>Description: Number of children, Minimum: 1, Maximum: 29</i></p>
+      </div>
+
+      <div class="filterItem">
+        <label for="include_adjacency">Include Adjacency :   </label>
+        <select name="include_adjacency" id="include_adjacency">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+        <br>
+        <p><i>Description: Include nearby places. If there are few hotels in the selected location, nearby locations will be added.</i></p>
+      </div>
+    </div>
+
+    <input type="submit" value="Search" class="submit">
+  </form>
+{% endblock %}
+
+{% block rightContent %}
+  {% for hotel in hotels %}
+    {% if loop.index <= 4 %}
+      <article class="hotels">
+        <header>
+          <div>
+            <h3><a href="{{ hotel['url'] }}"> {{ hotel["hotel_name_trans"]}} </a></h3>
+            <div class="about">
+              <b><i>Hotel overview:</i></b> {{ hotel["review_score_word"] }}
+              <b><i>Review:</i></b> {{ hotel["review_nr"] }}
+            </div>
+          </div>
+        </header>
+        <div class="body">
+          <div class="img">
+            <img src="{{ hotel['max_photo_url'] }}" alt="hotelImage" width="100px"/>
+          </div>
+          <div class="content">
+            <p><b>Price :</b> {{ hotel["price_breakdown"]["all_inclusive_price"] }} {{ hotel["price_breakdown"]["currency"] }}</p>
+            <p><b>Address:</b> {{ hotel["address"] }}</p>
+          </div>
+          <div class="localize">
+            <a href="{{ url_for('hotelPage.hotel_page', idx=loop.index) }}">
+              <img src="https://s2.loli.net/2022/04/29/32U9nSWQAdilmRh.png"
+                   alt="localization"
+                   width="30px"/>
+            </a>
+          </div>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+
+  <p class="label"><i> Try to search the hotel! </i></p>
+{% endblock %}
+
+{% block bottomContent %}
+  <p style="font-size: 14px"><b> SI 507 Final Project </b></p>
+  <p> Siyu Chen </p>
+{% endblock %}
+
